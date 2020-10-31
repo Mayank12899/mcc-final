@@ -34,7 +34,7 @@ class load extends Component {
                   useNativeDriver: true
               });
 
-              setTimeout(switchtoAuth, 5000);
+              setTimeout(switchtoAuth, 2000);
 
             });
 
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         color: "#FFFFFF",
         fontSize: 20,
         margin:20,
-        
+        // fontFamily: "OpenSans_400Regular"
 
     }
 });

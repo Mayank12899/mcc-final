@@ -1,10 +1,12 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+
 import {Router, Scene} from 'react-native-router-flux';
 import Auth from './src/Auth';
 import load from './src/loadingScene';
+import Main from './src/Main'
+import signup from './src/signup'
 
 export default function App() {
   return (
@@ -12,6 +14,9 @@ export default function App() {
     <Scene key="root">
         <Scene key = "loading" component={load} initial={true} hideNavBar={true}></Scene>
         <Scene key="Auth" component={Auth} hideNavBar={true}></Scene>
+
+        <Scene key="Main" component={Main} hideNavBar={true}></Scene>
+        <Scene key="signup" component={signup} hideNavBar={true}></Scene>
 
     </Scene>
     </Router>
