@@ -10,7 +10,6 @@ import firebase from './config';
 
 var db = firebase.firestore();
 
-import _ from 'lodash';
 LogBox.ignoreAllLogs();
 
 class Auth extends Component {
@@ -75,6 +74,11 @@ class Auth extends Component {
                                     Submit    
                                 </Text>    
                             </Button>
+                            <Text style={{position: 'relative', top: "45%", alignSelf:"center", color: "black", zIndex:2}} onPress={() => Actions.signup()}> 
+                    Don't Have an Account? 
+
+                </Text>
+                
 
                         </View>
                     </Form>
@@ -82,13 +86,7 @@ class Auth extends Component {
             </View>
             
             <View style={styles.bottom}>
-                <Text style={{position: 'relative', top: "45%", alignSelf:"center", color: "white"}}> 
-                    Don't Have an Account? 
-
-                </Text>
-                <Button transparent style={{top: "100%", alignSelf:"center"}} onPress={()=>{Actions.replace("signup")}}>
-                        <Text style={{textDecorationLine: 'underline', color: "white", fontWeight: "bold"}}>Sign Up</Text>
-                    </Button>                    
+                                    
             </View>
         </View>
     );

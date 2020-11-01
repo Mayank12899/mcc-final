@@ -11,14 +11,14 @@ import signup from './src/signup'
 export default function App() {
   return (
     <Router>
-    <Scene key="root">
-        <Scene key = "loading" component={load} initial={true} hideNavBar={true}></Scene>
-        <Scene key="Auth" component={Auth} hideNavBar={true}></Scene>
+      <Scene key="root">
+          <Scene key = "loading" component={load} initial={true} hideNavBar={true}></Scene>
+          <Scene key="Auth" component={Auth} hideNavBar={true}></Scene>
 
-        <Scene key="Main" component={Main} hideNavBar={true}></Scene>
-        <Scene key="signup" component={signup} hideNavBar={true}></Scene>
+          <Scene key="Main" component={Main} hideNavBar={true}></Scene>
+          <Scene key="signup" component={signup} hideNavBar={true}></Scene>
 
-    </Scene>
+      </Scene>
     </Router>
   );
 }

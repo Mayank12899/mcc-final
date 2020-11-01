@@ -38,7 +38,7 @@ class load extends Component {
 
             });
 
-        console.log("I am mounted");
+        // console.log("I am mounted");
 
     }
     render() {
